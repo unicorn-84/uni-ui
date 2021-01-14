@@ -1,6 +1,7 @@
 {
   "name": "@web-uni/uni-ui",
   "description": "UI components for react.js websites and apps",
+  "version": "0.0.2",
   "author": "unicorn-84 <unicorn-84@ya.ru> (https://github.com/unicorn-84)",
   "license": "MIT",
   "title": "Uni UI",
@@ -27,8 +28,8 @@
     "lint": "npm run lint:js && npm run lint:css",
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
-    "test:watch": "jest -c jest.config.js --watchAll",
-    "test": "jest -c jest.config.js"
+    "test:watch": "jest --watchAll",
+    "test": "jest"
   },
   "peerDependencies": {
     "react": "^17.0.1",
@@ -55,6 +56,9 @@
     "html-webpack-plugin": "^4.5.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
+    "jest-circus": "^26.6.3",
+    "jest-watch-typeahead": "^0.6.1",
+    "react-app-polyfill": "^2.0.0",
     "style-loader": "^2.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
@@ -74,9 +78,46 @@
     "react-dom": "^17.0.1"
   },
   "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "setupFiles": [
+      "react-app-polyfill/jsdom"
+    ],
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTest.js"
+    ],
+    "testMatch": [
+      "<rootDir>/src/**/*.test.{js,jsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "testRunner": "jest-circus/runner",
+    "transform": {
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
     "moduleNameMapper": {
-      "\\.(css|less)$": "identity-obj-proxy"
-    }
-  },
-  "version": "0.0.2"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+    },
+    "moduleFileExtensions": [
+      "jsx",
+      "js",
+      "json",
+      "node"
+    ],
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "resetMocks": true
+  }
 }
