@@ -1,5 +1,11 @@
 import React from 'react';
-import Button from '../../src';
+import {
+  H1,
+} from '../../src';
 import './styles.css';
 
-export default () => (<div><Button /></div>);
+export default () => (
+  <>
+    <H1 />
+  </>
+);
