@@ -27,7 +27,7 @@
     "lint": "npm run lint:js && npm run lint:css",
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
-    "test:watch": "jest -c jest.config.js --watch",
+    "test:watch": "jest -c jest.config.js --watchAll",
     "test": "jest -c jest.config.js"
   },
   "peerDependencies": {
