@@ -19,6 +19,6 @@ body {
   background-color: snow;
 }
 
-h1.title {
-  background-color: peachpuff;
+.title {
+  text-align: center;
 }
