@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   H1,
+  H2,
   P,
 } from '../../src';
 import './styles.css';
@@ -12,6 +13,10 @@ export default () => (
       <br />
       JAVASCRIPT
     </H1>
-    <P className="body-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla autem labore minus facere tempore unde?</P>
+    <H2 className="title">
+      Современное
+      <br />
+      веб-программирование
+    </H2>
   </>
 );
