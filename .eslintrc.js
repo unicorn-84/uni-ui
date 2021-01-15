@@ -21,5 +21,6 @@ module.exports = {
     'testing-library',
   ],
   rules: {
+    'react/prop-types': 0,
   },
 };

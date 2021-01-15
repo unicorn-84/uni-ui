@@ -7,4 +7,14 @@ describe('H1', () => {
     render(<H1 />);
     screen.debug();
   });
+  test('should render children', () => {
+    render(<H1>Title</H1>);
+    expect(screen.getByText('Title')).toBeInTheDocument();
+    screen.debug();
+  });
+  test('should have class', () => {
+    render(<H1 className="title">Title</H1>);
+    expect(screen.getByText('Title')).toHaveAttribute('class');
+    screen.debug();
+  });
 });

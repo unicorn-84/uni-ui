@@ -6,6 +6,6 @@ import './styles.css';
 
 export default () => (
   <>
-    <H1 />
+    <H1 className="title">Звёздная ночь освещает наши сны</H1>
   </>
 );
