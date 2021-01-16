@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import defaultProps from '../../../themes/defaultProps';
+import defaultProps from '../../../theme/defaultProps';
 
 const fontFamily = ({ theme: { text } }) => css`
   font-family: ${text.typo.family};
@@ -19,10 +19,10 @@ const colorStyle = ({ theme: { palette } }) => css`
 `;
 
 const style = () => css`
-  ${fontFamily};
-  ${weightStyle};
-  ${sizeStyle};
-  ${colorStyle};
+  ${fontFamily}
+  ${weightStyle}
+  ${sizeStyle}
+  ${colorStyle}
 `;
 
 const StyledText = styled.span([style]);
