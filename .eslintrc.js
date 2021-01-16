@@ -18,7 +18,7 @@ module.exports = {
   plugins: [
     'react',
     'jest',
+    'testing-library',
   ],
-  rules: {
-  },
+  rules: {},
 };
