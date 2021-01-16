@@ -2,17 +2,18 @@ import styled, { css } from 'styled-components';
 import defaultProps from '../../../themes/defaultProps';
 
 const fontFamily = ({ theme: { title } }) => css`
-  font-family: ${title.font.family};
+  font-family: ${title.typo.family};
 `;
 
 const weightStyle = ({ theme: { title } }) => css`
-  font-weight: ${title.font.weight};
+  font-weight: ${title.typo.weight};
 `;
 
 const sizeStyle = ({ theme: { title } }) => css`
-  font-size: ${title.font.size};
-  line-height: ${title.font.lineHeight};
-  margin-top: ${title.marginTop};
+  font-size: ${title.typo.size};
+  line-height: ${title.typo.lineHeight};
+  margin-top: ${title.typo.marginTop};
+  margin-bottom: ${title.typo.marginBottom};
 `;
 
 const colorStyle = ({ theme: { palette } }) => css`
@@ -29,7 +30,5 @@ const style = () => css`
 const StyledTitle = styled.h1([style]);
 
 StyledTitle.defaultProps = Object.create(defaultProps);
-
-console.log(StyledTitle.defaultProps);
 
 export default StyledTitle;

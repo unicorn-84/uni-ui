@@ -1,37 +1,19 @@
-# Text
+# Title
 
-Arbitrary text.
+Heading text.
 
 ## Usage
 
 ```javascript
-import { Text } from '@web-uni/uni-ui';
-<Text>text</Text>
+import { Title } from '@web-uni/uni-ui';
+<Title>Heading text</Title>
 ```
 
 ## Properties
 
-### children
-
-Anything that can be rendered.
-
-- *_Required_*
-
-```text
-node
-```
-
-### className
-
-Custom classes.
-
-```text
-string
-```
-
 ### style
 
-Custom style object.
+Custom JavaScript object for inline CSS.
 
 ```text
 object
@@ -48,5 +30,5 @@ string
 ## Intrinsic element
 
 ```text
-span
+h1
 ```
