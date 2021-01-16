@@ -18,6 +18,11 @@ body {
   background-color: snow;
 }
 
-.class {
+span.class {
   text-decoration: underline;
+}
+
+h1.title {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
