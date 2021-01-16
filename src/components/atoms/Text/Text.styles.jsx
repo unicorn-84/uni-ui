@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import defaultProps from '../../../themes/defaultProps';
 
 const fontFamily = ({ theme: { text } }) => css`
   font-family: ${text.font.family};
@@ -9,8 +10,8 @@ const weightStyle = ({ theme: { text } }) => css`
 `;
 
 const sizeStyle = ({ theme: { text } }) => css`
-  font-size: ${text.size};
-  line-height: ${text.lineHeight};
+  font-size: ${text.font.size};
+  line-height: ${text.font.lineHeight};
 `;
 
 const colorStyle = ({ theme: { palette } }) => css`
@@ -26,20 +27,6 @@ const style = () => css`
 
 const StyledText = styled.span([style]);
 
-StyledText.defaultProps = Object.create({
-  theme: {
-    palette: {
-      secondaryText: '#333',
-    },
-    text: {
-      font: {
-        family: 'sans-serif',
-        weight: 400,
-      },
-      size: '1rem',
-      lineHeight: 'normal',
-    },
-  },
-});
+StyledText.defaultProps = Object.create(defaultProps);
 
 export default StyledText;
