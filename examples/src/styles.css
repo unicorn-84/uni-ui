@@ -1,8 +1,3 @@
-:root {
-  --base-heading-font-family: 'Verdana';
-  --base-text-font-family: 'Verdana'
-}
-
 *,
 *::before,
 *::after {
@@ -23,8 +18,6 @@ body {
   background-color: snow;
 }
 
-.title {
-  text-align: center;
-  text-overflow: ellipsis;
-  word-break: break-all;
+.class {
+  text-decoration: underline;
 }

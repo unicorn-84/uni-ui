@@ -20,7 +20,5 @@ module.exports = {
     'jest',
     'testing-library',
   ],
-  rules: {
-    'react/prop-types': 0,
-  },
+  rules: {},
 };
