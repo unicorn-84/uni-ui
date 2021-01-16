@@ -22,6 +22,6 @@ For Yarn users:
 
 [Bit.dev](https://bit.dev/web-uni/uni-ui) playground for each component.
 
-## Release History
+## Releases History
 
 See the [Change Log](https://github.com/unicorn-84/uni-ui/wiki/Change-Log).
