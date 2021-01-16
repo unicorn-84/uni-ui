@@ -24,7 +24,7 @@
     "start": "webpack serve --mode development",
     "prepublishOnly": "rm -rdf build && babel src -d build --ignore src/setupTest.js",
     "lint:js": "eslint ./src --ext .js,.jsx --fix",
-    "lint:css": "stylelint './src/**/*.css' --fix",
+    "lint:css": "stylelint './src/**/*.styles.{js,jsx}' './src/**/*.{css,scss}' './examples/src/**/*.css' --fix --allow-empty-input",
     "lint": "npm run lint:js && npm run lint:css",
     "preversion": "npm run lint && npm test",
     "postversion": "git push && git push --tags",
@@ -68,6 +68,7 @@
     "style-loader": "^2.0.0",
     "stylelint": "^13.8.0",
     "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
     "webpack": "^5.13.0",
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.2"
@@ -136,7 +137,6 @@
   },
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache",
-    "./src/**/*.{css,scss}": "stylelint",
-    "./src/**/*.styles.{js,jsx}": "stylelint"
+    "*.{css,scss,js,jsx}": "stylelint --allow-empty-input"
   }
 }
