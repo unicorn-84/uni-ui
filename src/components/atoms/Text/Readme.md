@@ -6,32 +6,14 @@ Arbitrary text.
 
 ```javascript
 import { Text } from '@web-uni/uni-ui';
-<Text>text</Text>
+<Text>Arbitrary text</Text>
 ```
 
 ## Properties
 
-### children
-
-Anything that can be rendered.
-
-- *_Required_*
-
-```text
-node
-```
-
-### className
-
-Custom classes.
-
-```text
-string
-```
-
 ### style
 
-Custom style object.
+Custom JavaScript object for inline CSS.
 
 ```text
 object
