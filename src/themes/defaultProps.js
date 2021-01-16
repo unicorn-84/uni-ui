@@ -25,14 +25,14 @@ const leading = baseLineHeight * parseFloat(baseFontSize);
     Text(span)       - (1, 0, 0)
 */
 
-// const title = {
-//   typo: {
-//     family: fontPrimary,
-//     weight: 700,
-//     size: `${parseFloat(baseFontSize) * scale * scale * scale * scale * scale}rem`,
-//     ...calcTypoValues(leading, [2, 3, 1]),
-//   },
-// };
+const title = {
+  typo: {
+    family: fontPrimary,
+    weight: 700,
+    size: `${parseFloat(baseFontSize) * scale * scale * scale * scale * scale}rem`,
+    ...calcTypoValues(leading, [2, 3, 1]),
+  },
+};
 
 const text = {
   typo: {
@@ -49,10 +49,12 @@ const text = {
 
 const palette = {
   textSecondary: '#333',
+  textPrimary: '#010101',
 };
 
 const theme = {
   palette,
+  title,
   text,
 };
 

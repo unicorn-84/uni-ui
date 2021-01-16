@@ -8,30 +8,9 @@ import Title from '.';
 
 describe('Title', () => {
   test('renders Title component', () => {
-    render(<Title className="class" a11yLabel="test" style={{ color: 'red' }}>title</Title>);
+    render(<Title>title</Title>);
     expect(screen.getByText(/title/)).toBeInTheDocument();
     screen.debug();
-    render(<Title>Title</Title>);
-  });
-
-  test('has class attr', () => {
-    render(<Title className="class">title</Title>);
-    expect(screen.getByText(/title/)).toHaveAttribute('class');
-  });
-
-  test('has aria-label attr', () => {
-    render(<Title a11yLabel="test">title</Title>);
-    expect(screen.getByText(/title/)).toHaveAttribute('aria-label');
-  });
-
-  test('has style attr', () => {
-    render(<Title style={{ color: 'red' }}>title</Title>);
-    expect(screen.getByText(/title/)).toHaveAttribute('style');
-  });
-
-  test('has responsive attr', () => {
-    render(<Title responsive>title</Title>);
-    expect(screen.getByText(/title/)).toHaveAttribute('responsive');
   });
 
   test('should have no accessibility violations', async () => {

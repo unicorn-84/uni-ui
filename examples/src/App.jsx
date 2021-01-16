@@ -1,18 +1,13 @@
 import React from 'react';
 import {
+  Title,
   Text,
 } from '../../src';
 import './styles.css';
 
 export default () => (
   <>
-    <Text
-      className="class"
-      style={{
-        color: 'blue',
-      }}
-    >
-      Звёздная ночь освещает наши сны
-    </Text>
+    <Title>Звёздная ночь освещает наши сны</Title>
+    <Text>Звёздная ночь освещает наши сны</Text>
   </>
 );
