@@ -26,7 +26,7 @@ const leading = baseLineHeight * parseFloat(baseFontSize);
 */
 
 // const title = {
-//   font: {
+//   typo: {
 //     family: fontPrimary,
 //     weight: 700,
 //     size: `${parseFloat(baseFontSize) * scale * scale * scale * scale * scale}rem`,
@@ -34,26 +34,8 @@ const leading = baseLineHeight * parseFloat(baseFontSize);
 //   },
 // };
 
-// const h2 = {
-//   font: {
-//     family: fontPrimary,
-//     weight: 700,
-//     size: `${parseFloat(baseFontSize) * scale * scale * scale * scale}rem`,
-//     ...calcTypoValues(leading, [1.5, 2, 1]),
-//   },
-// };
-
-// const body = {
-//   font: {
-//     family: fontSecondary,
-//     weight: 400,
-//     size: baseFontSize,
-//     ...calcTypoValues(leading, [1, 1, 0]),
-//   },
-// };
-
 const text = {
-  font: {
+  typo: {
     family: fontSecondary,
     weight: 400,
     size: baseFontSize,

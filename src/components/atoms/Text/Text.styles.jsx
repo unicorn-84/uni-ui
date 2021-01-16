@@ -2,16 +2,16 @@ import styled, { css } from 'styled-components';
 import defaultProps from '../../../themes/defaultProps';
 
 const fontFamily = ({ theme: { text } }) => css`
-  font-family: ${text.font.family};
+  font-family: ${text.typo.family};
 `;
 
 const weightStyle = ({ theme: { text } }) => css`
-  font-weight: ${text.font.weight};
+  font-weight: ${text.typo.weight};
 `;
 
 const sizeStyle = ({ theme: { text } }) => css`
-  font-size: ${text.font.size};
-  line-height: ${text.font.lineHeight};
+  font-size: ${text.typo.size};
+  line-height: ${text.typo.lineHeight};
 `;
 
 const colorStyle = ({ theme: { palette } }) => css`
