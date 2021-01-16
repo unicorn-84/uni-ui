@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import defaultProps from '../../../themes/defaultProps';
+import defaultProps from '../../../theme/defaultProps';
 
 const fontFamily = ({ theme: { title } }) => css`
   font-family: ${title.typo.family};
@@ -21,10 +21,10 @@ const colorStyle = ({ theme: { palette } }) => css`
 `;
 
 const style = () => css`
-  ${fontFamily};
-  ${weightStyle};
-  ${sizeStyle};
-  ${colorStyle};
+  ${fontFamily}
+  ${weightStyle}
+  ${sizeStyle}
+  ${colorStyle}
 `;
 
 const StyledTitle = styled.h1([style]);
