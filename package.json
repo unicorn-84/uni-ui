@@ -1,7 +1,7 @@
 {
   "name": "@web-uni/uni-ui",
   "description": "UI components for react.js websites and apps",
-  "version": "0.0.2",
+  "version": "0.2.0",
   "author": "unicorn-84 <unicorn-84@ya.ru> (https://github.com/unicorn-84)",
   "license": "MIT",
   "title": "Uni UI",
