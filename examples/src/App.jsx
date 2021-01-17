@@ -1,5 +1,12 @@
 import React from 'react';
-import Button from '../../src';
-import './styles.css';
+import {
+  Title,
+  Text,
+} from '../../src';
 
-export default () => (<div><Button /></div>);
+export default () => (
+  <>
+    <Title>Выразительный Javascript</Title>
+    <Text>3-е издание</Text>
+  </>
+);

@@ -20,6 +20,5 @@ module.exports = {
     'jest',
     'testing-library',
   ],
-  rules: {
-  },
+  rules: {},
 };
