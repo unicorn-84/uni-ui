@@ -19,6 +19,7 @@ module.exports = {
     'react',
     'jest',
     'testing-library',
+    'jsdoc',
   ],
   rules: {},
 };
