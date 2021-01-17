@@ -2,8 +2,6 @@
 
 UI components for react.js websites and apps
 
-***
-
 ## Install
 
 You can install Uni-UI using either of the methods given below.
@@ -23,3 +21,7 @@ For Yarn users:
 ## Explore
 
 [Bit.dev](https://bit.dev/web-uni/uni-ui) playground for each component.
+
+## Releases History
+
+See the [Change Log](https://github.com/unicorn-84/uni-ui/wiki/Change-Log).
