@@ -87,6 +87,11 @@
                 "name": "index.js"
             },
             {
+                "relativePath": "src/utils/utils.js",
+                "test": false,
+                "name": "utils.js"
+            },
+            {
                 "relativePath": "src/utils/utils.test.js",
                 "test": true,
                 "name": "utils.test.js"
