@@ -73,13 +73,6 @@
     "webpack-cli": "^4.3.1",
     "webpack-dev-server": "^3.11.2"
   },
-  "bit": {
-    "env": {
-      "compiler": "bit.envs/compilers/react@1.0.21"
-    },
-    "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
-  },
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -138,5 +131,13 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache",
     "*.{css,scss,js,jsx}": "stylelint --allow-empty-input"
+  },
+  "bit": {
+    "env": {
+      "compiler": "bit.envs/compilers/react@1.0.21",
+      "tester": "bit.envs/testers/jest@22.4.3"
+    },
+    "componentsDefaultDirectory": "components/atoms/{name}",
+    "packageManager": "yarn"
   }
 }
