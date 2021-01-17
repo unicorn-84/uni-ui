@@ -6,6 +6,7 @@
   "license": "MIT",
   "title": "Uni UI",
   "main": "build/index.js",
+  "module": "src/index.js",
   "keywords": [
     "@web-uni",
     "uni-ui",
@@ -22,6 +23,7 @@
   },
   "scripts": {
     "start": "webpack serve --mode development",
+    "build": "webpack --mode production",
     "prepublishOnly": "rm -rdf build && babel src -d build --ignore './src/setupTest.js' --ignore './src/**/*.test.js' --ignore './src/**/*.test.jsx'",
     "lint:js": "eslint ./src --ext .js,.jsx --fix",
     "lint:css": "stylelint './src/**/*.styles.{js,jsx}' './src/**/*.{css,scss}' './examples/src/**/*.css' --fix --allow-empty-input",
