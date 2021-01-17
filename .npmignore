@@ -1,5 +1,7 @@
 examples
 src
+coverage
+.bitmap
 .babelrc
 .editorconfig
 .eslintignore
