@@ -30,7 +30,11 @@ const title = {
     family: fontPrimary,
     weight: 700,
     size: `${parseFloat(baseFontSize) * scale * scale * scale * scale * scale}rem`,
-    ...calcTypoValues(leading, [2, 3, 1]),
+    ...calcTypoValues(leading, {
+      lineHeightRatio: 2,
+      marginTopRatio: 3,
+      marginBottomRatio: 1,
+    }),
   },
 };
 
@@ -39,7 +43,11 @@ const text = {
     family: fontSecondary,
     weight: 400,
     size: baseFontSize,
-    ...calcTypoValues(leading, [1, 0, 0]),
+    ...calcTypoValues(leading, {
+      lineHeightRatio: 1,
+      marginTopRatio: 0,
+      marginBottomRatio: 0,
+    }),
   },
 };
 
