@@ -138,5 +138,8 @@
   "lint-staged": {
     "*.{js,jsx}": "eslint --cache",
     "*.{css,scss,js,jsx}": "stylelint --allow-empty-input"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
